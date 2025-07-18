@@ -15,7 +15,7 @@ public class CharaCon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.D))
         {
             Animator.SetBool("IsWalking", true);
         }
@@ -23,9 +23,23 @@ public class CharaCon : MonoBehaviour
         {
             Animator.SetBool("IsWalking", false);
         }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            Animator.SetBool("IsBack", true);
+        }
+        else if (Animator.GetBool("IsBack"))
+        {
+            Animator.SetBool("IsBack", false);
+        }
+        
     }
     public void Walk()
-    { 
+    {
         transform.position += WalkSpeed * Time.deltaTime;
+    }
+
+    public void Back()
+    {
+        transform.position -= WalkSpeed * Time.deltaTime;
     }
 }
