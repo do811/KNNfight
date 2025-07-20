@@ -22,7 +22,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
+  m_Motion: {fileID: 934337753431696423, guid: 978dcd0d123424548bb8a0a145d25928, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -139,7 +139,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 66381361069009604, guid: f1df5b9c6cd85b34a8ab89ba5a12cc14, type: 3}
+  m_Motion: {fileID: 934337753431696423, guid: 5d845ca30de9f9040aa2fa54491b1fc8, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -211,7 +211,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Animation 1
+  m_Name: Animation 2
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: IsWalking
