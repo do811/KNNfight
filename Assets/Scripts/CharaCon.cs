@@ -23,7 +23,8 @@ public class CharaCon : MonoBehaviour
         {
             Animator.SetBool("IsWalking", false);
         }
-        else if (Input.GetKey(KeyCode.A))
+
+        if (Input.GetKey(KeyCode.A))
         {
             Animator.SetBool("IsBack", true);
         }
@@ -31,8 +32,18 @@ public class CharaCon : MonoBehaviour
         {
             Animator.SetBool("IsBack", false);
         }
+
+        if (Input.GetKey(KeyCode.U))
+        {
+            Animator.SetBool("IsPunchLow", true);
+        }
+        else if (Animator.GetBool("IsPunchLow"))
+        {
+            Animator.SetBool("IsPunchLow", false);
+        }
         
     }
+
     public void Walk()
     {
         transform.position += WalkSpeed * Time.deltaTime;
