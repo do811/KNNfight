@@ -41,7 +41,7 @@ public class CharaCon : MonoBehaviour
         {
             Animator.SetBool("IsPunchLow", false);
         }
-        
+
     }
 
     public void Walk()
@@ -52,5 +52,17 @@ public class CharaCon : MonoBehaviour
     public void Back()
     {
         transform.position -= WalkSpeed * Time.deltaTime;
+    }
+
+
+    [SerializeField]
+    private GameObject PunchLowObj;
+    public void PunchLow()
+    {
+        PunchLowObj.SetActive(true);
+    }
+    public void PunchLowEnd()
+    {
+        PunchLowObj.SetActive(false);
     }
 }
